@@ -2,7 +2,7 @@
 
 ### Overview
 
-Created a simple dApp that allows users to connect to the metamask wallet. You also can retrieve data of historically and real time. Enjoy.
+Created a simple dApp that allows users to connect to the metamask wallet. You also can retrieve data of historically and real time of the Metamask wallet. In this project it allowed me to learn more about the SDK of Moralis. I was able to explore the cloud functions that support the backend of the dApp. I also was able to review the dashboard which shows the users logged in on the server. Using the console I was able to confirm the loging in and out. Enjoy.
 
 ### Description
 
