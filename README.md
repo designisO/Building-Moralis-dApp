@@ -25,16 +25,6 @@ Prerequisites:
 * Moralis SDK
    - API ID and Server will be needed for functionality.
 
-### Installing
-
-```
-* Add the Moralis API Keys to the metamask.js file from your Moralis.io account.
-* Add the Moralis SDK to the index.html.
-```
-<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-
-<script src="https://unpkg.com/moralis/dist/moralis.js"></script> 
-```
 ### Executing program
 
 * Live Page: 
