@@ -1,7 +1,10 @@
 ## Building a dApp using Moralis.io SDK
 
+### Overview
 
-## Description
+Created a simple dApp that allows users to connect to the metamask wallet. You also can retrieve data of historically and real time. Enjoy.
+
+### Description
 
 Moralis IO
 
