@@ -5,7 +5,7 @@
     <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   </head>
   <body>
-    <h1>Gas Stats With Moralis</h1>
+    <h1>Moralis Gas Stats</h1>
 
     <button id="btn-login">Moralis Login</button>
     <button id="btn-logout">Logout</button>
@@ -13,18 +13,17 @@
 
     <script>
       // connect to Moralis server
-
-      const serverUrl = "https://gdy7atnfayzu.usemoralis.com:2053/server";
-      const appId = "XKNTibhWX0pNsDj0zCHw7bJ9nU1leog0p3xrj1HW";
+      const serverUrl = "https://9c8nrl6lfq8u.moralis.io:2053/server";
+      const appId = "TCDv7lnGwNN7RIhlj30wA69dnaamxtsmqcTnm3ch";
       Moralis.start({ serverUrl, appId });
 
-      // add from here down
       async function login() {
         let user = Moralis.User.current();
         if (!user) {
-          user = await Moralis.authenticate();
+          user = await Moralis.Web3.authenticate();
         }
         console.log("logged in user:", user);
+        getStats();
       }
 
       async function logOut() {
@@ -32,12 +31,10 @@
         console.log("logged out");
       }
 
+      // bind button click handlers
       document.getElementById("btn-login").onclick = login;
       document.getElementById("btn-logout").onclick = logOut;
-
-
-      // ******* pt 2. Get status function ********* 
-
+      document.getElementById("btn-get-stats").onclick = getStats;
 
       function getStats() {
         const user = Moralis.User.current();
@@ -58,14 +55,6 @@
 
       //get stats on page load
       getStats();
-
-
-
-
-      // 
-
     </script>
-        
-
   </body>
 </html>
