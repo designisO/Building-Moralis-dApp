@@ -30,7 +30,7 @@ Prerequisites:
 
 ### Executing program
 
-* Live Page: 
+* Live Page: https://designiso.github.io/Building-Moralis-dApp/
 
 ## Help
 
